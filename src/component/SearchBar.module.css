@@ -1,0 +1,72 @@
+.searchBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  position: relative;
+}
+
+.searchBar input {
+  width: 70%;
+  height: 40px;
+  border: 1px solid black;
+  min-width: 300px;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.hide {
+  display: none;
+}
+
+.recipeLinkCont{
+  height: 200px;
+  overflow: auto;
+  width: 70%;
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  background: white;
+  padding: 0 30px;
+  border-radius: 6px;
+}
+
+.recipeLink {
+  text-decoration: none;
+  height: 65px;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recipeLink img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .searchBar input {
+    width: 90%;
+  }
+
+  .recipeLinkCont {
+    width: 90%;
+  }
+  .recipeLink p{
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 5px;
+  }
+  .recipeLink img {
+    width: 50px;
+    height: 50px;
+  }
+}

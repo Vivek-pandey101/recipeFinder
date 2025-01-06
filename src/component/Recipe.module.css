@@ -1,0 +1,71 @@
+.recipeContainer {
+  width: 100vw;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: 1000ms;
+}
+
+.recipe:hover {
+  transform: translate(0, -10px);
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.recipe img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.recipe h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: rgb(4, 79, 79);
+}
+
+.recipe a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.recipe a svg {
+  font-size: 20px;
+  color: rgb(4, 252, 4);
+  font-weight: 600;
+}
+
+.YTsource {
+  margin-top: 10px;
+}
+
+.source {
+  margin-top: -20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.readMore {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background: rgb(4, 252, 4);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
